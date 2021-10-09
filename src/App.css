@@ -1,38 +1,107 @@
-.App {
+
+body {
+  color: white;
+  background-color: blue;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  text-align: center;
+  padding: 100px;
+}
+
+.todo-row:nth-child(4n + 1) {
+  background-color: rgb(28, 214, 247);
+  text-align: center;
+  color : rgb(12, 5, 75);
+}
+
+.todo-row:nth-child(4n + 2) {
+  background-color: rgb(247, 36, 229);
+  text-align: center;
+  color : rgb(30, 25, 73);
+}
+
+.todo-row:nth-child(4n + 3) {
+  background-color: rgb(242, 245, 49);
+  text-align: center;
+  color : rgb(26, 22, 63);
+}
+.todo-row:nth-child(4n) {
+  background-color: rgb(236, 118, 8);
+  text-align: center;
+  color : rgb(26, 22, 63);
+}
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+.delete-icon {
+  padding: 16px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  cursor: pointer;
+  outline: none;
+ background-color: rgb(30, 211, 60);
+  color: black;
+  border-style: solid;
+  text-transform: capitalize;
+  font-weight: 800;
+
+}
+
+.edit-icon {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+ background-color: aqua;
+  color: black;
+  text-transform: capitalize;
+  font-weight: 800;
+  border-style: solid;
+
+}
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: rgb(12, 5, 75);
+  padding: 12px;
+  border-radius: 5px;
+  width: 90%;
+}
+.todoinp::placeholder {
+  color: rgb(12, 5, 75);
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todoinp{
+  height: 32px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todobtn {
+  padding: 10px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+ background-color: aqua;
+  color: black;
+  text-transform: capitalize;
+  font-weight: 600;
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-app {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  justify-content: start;
+  width: 600px;
+  min-height: 600px;
+  background: #161a2b;
+  text-align: center;
+  margin: 28px auto;
+  border-radius: 10px;
+  padding-bottom: 2px;
 }
